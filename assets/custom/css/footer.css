@@ -1,0 +1,21 @@
+#footer {
+	margin-top: 10px;
+	background-color: #000000;
+	color: #a07500;
+}
+
+div#footer > div.container {
+	background-color: #000000;
+}
+
+
+.footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.footer p:last-child {
+  margin-bottom: 0;
+}
