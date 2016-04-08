@@ -1,9 +1,17 @@
 <?php
 	include ('header.php');
 ?>
-<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
 
-<p>This is the <strong>Investments</strong> page.</p>
+
+<div class="container">
+	
+
+	<p>This is the <strong>Investments</strong> page.</p>
+
+
+</div>
+
+
 <script>
 	$(document).ready(function($){
 		$('#menu-item-investments').addClass('active');
