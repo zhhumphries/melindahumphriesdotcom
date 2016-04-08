@@ -20,7 +20,7 @@
     <!-- Custom styles for this template -->
     <link href="assets/custom/css/navbar.css" rel="stylesheet">
     <link href="assets/custom/css/general.css" rel="stylesheet">
-    <link href="assets/custom/css/footer.css" rel="stylesheet">
+    <link href="assets/custom/css/stickyfooter.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 

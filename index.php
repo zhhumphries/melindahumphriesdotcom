@@ -9,13 +9,28 @@
 	<script src="assets/owl/js/owl.carousel.min.js"></script>
 	<div class="owl-container">
 		<div id="target" class="owl-carousel owl-theme owl-loaded">
-			<img class="owl-item" src="images/image1.jpg" alt="" />
-			<img class="owl-item" src="images/image2.jpg" alt="" />
-			<img class="owl-item" src="images/image3.jpg" alt="" />
-			<img class="owl-item" src="images/image4.jpg" alt="" />
-			<img class="owl-item" src="images/image5.jpg" alt="" />
-			<img class="owl-item" src="images/image6.jpg" alt="" />
+			<?php
+				$dir = "images/";
+				$iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir));
+
+				$dom = new DomDocument("1.0");
+				$dom->formatOutput = true;
+				foreach($iterator as $name => $item)
+				{  
+					if ((strcmp($item->getFilename(), ".") !== 0) && (strcmp($item->getFilename(), "..") !== 0))
+					{
+				    	$img = $dom->createElement('img');
+
+				    	$img = $dom->appendChild($img);
+				    	$img->setAttribute('src',$dir . $item->getFilename());
+				    	$img->setAttribute('class', 'owl-item item');
+				   	}
+				}
+				echo $dom->saveHtml();
+			?>
 		</div>
+	</div>
+	<div class="container">
 	</div>
 	
 	<script>
