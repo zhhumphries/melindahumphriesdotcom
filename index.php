@@ -20,6 +20,7 @@
 	
 	<script>
 	$(document).ready(function($){
+		$('#menu-item-home').addClass('active');
 		var xPercent;
 		var transitioning = false;
 		var starttime;
