@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Melinda Humphries Photography">
     <link rel="icon" href="../../favicon.ico">
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
 
     <title>Melinda Humphries | Fine Art Wedding Photography</title>
 
@@ -20,9 +21,14 @@
     <!-- Custom styles for this template -->
     <link href="assets/custom/css/navbar.css" rel="stylesheet">
     <link href="assets/custom/css/general.css" rel="stylesheet">
-    <link href="assets/custom/css/stickyfooter.css" rel="stylesheet">
+    <link href="assets/custom/css/social.css" rel="stylesheet">
+    <link href="assets/custom/css/footer.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel='stylesheet' id='genericons-css'  href='assets/genericons/genericons.css?ver=3.3' type='text/css' media='all' />
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

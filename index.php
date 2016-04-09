@@ -5,7 +5,6 @@
 	<link rel="stylesheet" href="assets/owl/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/owl/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="assets/custom/css/owl.css">
-	<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
 	<script src="assets/owl/js/owl.carousel.min.js"></script>
 	<div class="owl-container">
 		<div id="target" class="owl-carousel owl-theme owl-loaded">
