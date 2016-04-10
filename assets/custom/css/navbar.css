@@ -115,3 +115,8 @@ a:focus {
     background-color: transparent;
   }
 }
+
+.navbar {
+  border-bottom-style: solid;
+  border-bottom-color: #e5e5e5;
+}

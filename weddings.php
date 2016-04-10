@@ -4,11 +4,17 @@
 
 
 <div class="container">
-	
+    	
+    <div class="subpage-quote-div">
+    	<h2 class="subpage-quote-text">You are my forever...</h2>
+    </div>
+    
+    <!-- instagram picture gallery -->
 
-	<p>This is the <strong>Weddings</strong> page.</p>
-
-
+    <div class="subpage-quote-div">
+    	<h2 class="subpage-quote-text">... you are my always</h2>
+    </div>
+    
 </div>
 
 <script>

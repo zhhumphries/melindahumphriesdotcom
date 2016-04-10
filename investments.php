@@ -5,12 +5,17 @@
 
 <div class="container">
 	
+    <div class="subpage-quote-div">
+    	<h2 class="subpage-quote-text">Taking life's adventures...</h2>
+    </div>
+    
+    <!-- instagram picture gallery -->
 
-	<p>This is the <strong>Investments</strong> page.</p>
-
+    <div class="subpage-quote-div">
+    	<h2 class="subpage-quote-text">... one moment at a time</h2>
+    </div>
 
 </div>
-
 
 <script>
 	$(document).ready(function($){

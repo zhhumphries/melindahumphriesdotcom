@@ -9,7 +9,7 @@
 	<div class="owl-container">
 		<div id="target" class="owl-carousel owl-theme owl-loaded">
 			<?php
-				$dir = "images/";
+				$dir = "images/home/";
 				$iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir));
 
 				$dom = new DomDocument("1.0");

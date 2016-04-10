@@ -5,9 +5,15 @@
 
 <div class="container">
 	
+	<div class="subpage-quote-div">
+		<h2 class="subpage-quote-text">These moments...</h2>
+	</div>
+    
+    <!-- instagram picture gallery -->
 
-	<p>This is the <strong>Lifestyle</strong> page.</p>
-
+	<div class="subpage-quote-div">
+		<h2 class="subpage-quote-text">... are everything</h2>
+	</div>
 
 </div>
 
