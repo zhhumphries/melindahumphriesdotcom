@@ -34,9 +34,14 @@ body {
 }
 
 .copyright-item {
-  font-size: 8px;
-  font-size: 0.5em;
   position: relative;
   top: -10px;
   margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .copyright-item {
+    font-size: 8px;
+    font-size: 0.5em;
+  }
 }
