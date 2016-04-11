@@ -51,8 +51,7 @@
 
     <h3 style="text-align: center;"><em>KIND WORDS</em></h3>
     <div class="testimonial-div">
-        <p><a class="fancybox testimonial-image pull-right" rel="gallery" href="images/investments/tori_adam_testimonial.jpg"><img src="images/investments/tori_adam_testimonial_small.jpg" align="right"></a>
-        <p class="testimonial-title">Tori and Adam</p>
+        <p><a class="fancybox testimonial-image pull-right" rel="gallery" href="images/investments/tori_adam_testimonial.jpg"><img src="images/investments/tori_adam_testimonial_small.png" align="right"></a>
         <p class="testimonial-text">&#8220;You put a lot of faith and trust into your photographer to capture this once in a lifetime day. You depend on them to capture your memories so you can revisit them throughout your life. Melinda photographed every little detail and every special moment, our final wedding is a complete and beautifully documented story of the day from start to finish. My husband and I are beyond grateful to her for being a part of our wedding day. We cannot sing her praises or recommended her enough!&#8221;</p></p>
         <p class="testimonial-signature">-Tori</p>
     </div>
@@ -60,8 +59,7 @@
     <br style="clear:both">
 
     <div class="testimonial-div">
-        <p><a class="fancybox testimonial-image pull-left" rel="gallery" href="images/investments/jonna_chip_testimonial.jpg"><img src="images/investments/jonna_chip_testimonial_small.jpg"></a>
-        <p class="testimonial-title">Jonna and Chip</p>
+        <p><a class="fancybox testimonial-image pull-left" rel="gallery" href="images/investments/jonna_chip_testimonial.jpg"><img src="images/investments/jonna_chip_testimonial_small.png"></a>
         <p class="testimonial-text">&#8220;My fiancé and I had the privilege of working with Melinda and we were blown away by our engagement pictures! She knew all the great photo spots at the venues and made the experience amazing and we were both so comfortable with her! Sometimes we forgot we were even taking pictures! We love her and we are so thankful for her beautiful work!&#8221;</p></p>
         <p class="testimonial-signature">-Jonna</p>
     </div>
@@ -69,8 +67,7 @@
     <br style="clear:both">
 
     <div class="testimonial-div">
-        <p><a class="fancybox testimonial-image pull-right" rel="gallery" href="images/investments/katie_bill_testimonial.jpg"><img src="images/investments/katie_bill_testimonial_small.jpg"></a>
-        <p class="testimonial-title">Katie and Bill</p>
+        <p><a class="fancybox testimonial-image pull-right" rel="gallery" href="images/investments/katie_bill_testimonial.jpg"><img src="images/investments/katie_bill_testimonial_small.png"></a>
         <p class="testimonial-text">&#8220;I never could have dreamed that our wedding pictures would turn out so incredible. Melinda was so easy to work with (which made the wedding day much less stressful) and took gorgeous photos. Her turn around time was super fast and the product was outstanding. Almost six months later I'm still showing them off, and one photo in particular is often called &#8220;the coolest picture&#8221; my friends have ever seen.&#8221;</p></p>
         <p class="testimonial-signature">-Katie</p>
     </div>
@@ -78,8 +75,7 @@
     <br style="clear:both">
 
     <div class="testimonial-div">
-        <p><a class="fancybox testimonial-image pull-left" rel="gallery" href="images/investments/hillary_andy_testimonial.jpg"><img src="images/investments/hillary_andy_testimonial_small.jpg"></a>
-        <p class="testimonial-title">Hillary and Andy</p>
+        <p><a class="fancybox testimonial-image pull-left" rel="gallery" href="images/investments/hillary_andy_testimonial.jpg"><img src="images/investments/hillary_andy_testimonial_small.png"></a>
         <p class="testimonial-text">&#8220;We hired Melinda as our wedding photographer and I am so glad that we did! Throughout the day, Melinda was calm, humorous, and had great attention to detail. Because she kept us moving calmly through the day, we never felt rushed. She knew exactly which moments to capture and how, so we never worried about what was being photographed and what wasn't. The bottom line is her photos are fabulous. We couldn't have been happier with our choice and would highly recommend her.&#8221;</p></p>
         <p class="testimonial-signature">-Hillary</p>
     </div>

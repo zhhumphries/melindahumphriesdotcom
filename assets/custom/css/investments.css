@@ -26,7 +26,7 @@
 
 .testimonial-text {
 	text-align: justify;
-	padding: 5px 10px 5px 10px;
+	padding: 10px 10px 5px 10px;
 	font-size: 20px;
 	font-size: 1.25em;
 	font-style: italic;
@@ -56,7 +56,7 @@
 		padding: 5px 10px 5px 10px;
 	}
 	.testimonial-text {
-		padding: 5px 10px 5px 10px;
+		padding: 20px 10px 5px 10px;
 	}
 	.testimonial-title {
 		padding: 5px 10px 5px 10px;
