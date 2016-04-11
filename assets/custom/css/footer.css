@@ -23,6 +23,7 @@ body {
   color: #fff;
   /* Background color */
   background-color: #c9ad86;
+  background-color: #917e59;
   /* Top border color */
   border-top: 1px solid #e5e5e5;
 }
@@ -33,6 +34,8 @@ body {
 }
 
 .copyright-item {
+  font-size: 8px;
+  font-size: 0.5em;
   position: relative;
   top: -10px;
   margin-bottom: 0;

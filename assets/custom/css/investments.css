@@ -1,0 +1,67 @@
+.investments-container {
+	width: 100% !important;
+}
+
+.investments-price-img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (min-width: 768px) {
+	.investments-price-img {
+		padding-right: 30px;
+	}
+}
+
+.testimonial-div {
+	padding: 0 10% 0 10%;
+}
+
+.testimonial-image {
+	max-width: 20%;
+	min-width: 200px !important;
+	width: auto;
+	padding: 5px 10px 5px 10px;
+}
+
+.testimonial-text {
+	text-align: justify;
+	padding: 5px 10px 5px 10px;
+	font-size: 20px;
+	font-size: 1.25em;
+	font-style: italic;
+}
+
+.testimonial-title {
+	text-align: left;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 20px;
+	font-size: 1.25em;
+	padding: 5px 10px 5px 10px;
+}
+
+.testimonial-signature {
+	padding: 5px 10px 5px 10px;
+	font-size: 20px;
+	font-size: 1.25em;
+	font-style:italic;
+}
+
+@media (min-width: 768px) {
+	.testimonial-div {
+		padding: 0 15% 0 15%;
+	}
+	.testimonial-image {
+		padding: 5px 10px 5px 10px;
+	}
+	.testimonial-text {
+		padding: 5px 10px 5px 10px;
+	}
+	.testimonial-title {
+		padding: 5px 10px 5px 10px;
+	}
+	.testimonial-signature {
+		padding: 5px 10px 5px 10px;
+	}
+}

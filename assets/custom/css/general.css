@@ -16,6 +16,7 @@ a:focus {
 	text-align: center;
 	color: #797374;
 	padding-top:10px;
+	bottom: 20px;
 	clear: both;
 	display: block;
 }

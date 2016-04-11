@@ -45,22 +45,21 @@
 			margin:10,
 			items:2,
 			dots:false,
-			smartSpeed:5000,
 			responsiveClass:true,
 			responsive : {
 				0 : {
-					items : 1
+					items : 1,
+					smartSpeed:300
 				},
 				768 : {
-			        items : 2
+			        items : 2,
+			        smartSpeed:5000
 			    }
 			}
 		});
 		$( "#target" ).mousemove(function( event ) {
 			var xCord = event.pageX;
 			xPercent = xCord / $( document ).width() *100;
-		});
-		$(".owl-item").mouseenter(function() {
 			if (transitioning == true) {
 				var currtime = new Date().getTime();
 				var diff = currtime - starttime;
