@@ -6,6 +6,13 @@ a:focus {
 	outline: none;
 }
 
+a {
+	color: #917e59;
+}
+a:hover {
+	color: #5F5339;
+}
+
 .jumbotron {
 	background-color: #fff;
 }
@@ -14,7 +21,7 @@ a:focus {
 	font-family: 'La Belle Aurore', cursive;
 	text-transform: lowercase;
 	text-align: center;
-	color: #797374;
+	color: #b5b5b5;
 	padding-top:10px;
 	bottom: 20px;
 	clear: both;

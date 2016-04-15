@@ -1,50 +1,100 @@
 <?php
 	include ('header.php');
 ?>
+
+<!-- Add notification assets -->
+<script type="text/javascript" src="assets/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/noty/demo/animate.css" media="screen"/>
+<script type="text/javascript" src="assets/noty/js/noty/themes/gold.js"></script>
+
 <!-- Add fancyBox main JS and CSS files -->
 <script type="text/javascript" src="assets/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
 <link rel="stylesheet" type="text/css" href="assets/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen"/>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#menu-item-investments').addClass('active');
-        $(".fancybox").fancybox({
-
-            padding: 0,
-
-            openEffect : 'none',
-            closeEffect : 'none',
-            nextEffect : 'none',
-            prevEffect : 'none',
-
-            closeClick : true,
-
-            helpers : {
-                title : {
-                    type : 'inside'
-                },
-                overlay : {
-                    css : {
-                        'background' : 'rgba(238,238,238,0.85)'
-                    }
-                }
-            }
-        });
-    });
-</script>
+<script type="text/javascript" src="assets/custom/js/investments.js"></script>
 
 <link rel="stylesheet" type="text/css" href="assets/custom/css/investments.css" media="screen"/>
 
 <div class="container">
-	
-    <div class="subpage-quote-div">
-    	<h2 class="subpage-quote-text">A picture is worth...</h2>
-    </div>
-    
+
     <div class="container">
         <div class="investments-price-div">
             <img class="investments-price-img" src="images/investments/investments_image.jpg" alt="">
         </div>
+    </div>
+
+    <hr>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h2 class="contact_title">Hello, Gorgeous!</h2>
+        <h4 class="contact_text">For a detailed price quote please contact me at <a href="mailto:melindahumphries82@gmail.com">melindahumphries82@gmail.com</a> or click on the button bellow to fill out the contact form. I can't wait to hear from you!</h4>
+        <p><a class="btn btn-primary btn-lg contact_button" href="#myModal" data-toggle="modal" role="button">Contact Me &raquo;</a></p>
+      </div>
+    </div>
+    <!-- <a class="btn btn-primary btn-lg contact_button" href="javascript:void(0)" onclick="successMail();" role="button">Contact Me &raquo;</a>-->
+
+    <div id="myModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Let's chat!</h3>
+          </div>
+          <div class="modal-body">
+
+            <form class="form-horizontal col-sm-12" id="contactForm">
+                <div class="form-group">
+                    <label for="contact-name">Your Name: <span style="color: #917e59">*</span></label>
+                    <input type="text" class="form-control" id="contact-name" name="name" placeholder="Your Name" type="text" onblur='validateName()'>
+                    <span class='error-message' id='name-error'></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-phone">Your Phone Number:</label>
+                    <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="123-456-7890" type="text" onblur='validatePhone()'>
+                    <span class='error-message' id='phone-error'></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Your Email address: <span style="color: #917e59">*</span></label>
+                    <input type="email" class="form-control" id="contact-email" name="email" placeholder="you@mail.com" type="text" onblur='validateEmail()'>
+                    <span class='error-message' id='email-error'></span>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label>Reason for Inquiry:</label>
+                    </div>
+                    <div>
+                        <input id="contact-category" class="form-control" type="text" name="category" list="categoryList" placeholder="Wedding">
+                        <datalist id="categoryList">
+                            <option value="Wedding">
+                            <option value="Engagement">
+                            <option value="Prices">
+                            <option value="Event">
+                            <option value="Fashion">
+                            <option value="Family">
+                            <option value="General">
+                            <option value="Lifestyle">
+                            <option value="Pictures">
+                            <option value="Photoshoot">
+                            <option value="Quote">
+                            <option value="Other">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for='contactMessage'>Your Message: <span style="color: #917e59">*</span></label>
+                    <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="What's on your mind??" type="text" onblur='validateMessage()'></textarea>
+                    <span class='error-message' id='message-error'></span>
+                </div>
+                <button onclick='return validateForm()' class="btn btn-default pull-right contact_button">Submit</button>
+                <button onclick="clearContactForm()" class="btn pull-right" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                <span class='error-message pull-left' id='submit-error'></span>
+            </form>
+          </div>
+          <div class="modal-footer" style="border-top:none;">
+          </div>
+        </div>
+      </div>
     </div>
 
     <hr>
@@ -83,10 +133,6 @@
     <br style="clear:both">
 
     <hr>
-
-    <div class="subpage-quote-div">
-    	<h2 class="subpage-quote-text">... a memory for a lifetime</h2>
-    </div>
 
     <br><br>
 
