@@ -12,11 +12,16 @@
 				$dir = "images/home/";
 				$iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir));
 
+				$files = iterator_to_array($iterator);
+
+				// sort them by name
+				uasort($files, create_function('$a,$b', 'return strnatcasecmp($a->getFilename(), $b->getFilename());'));
+
 				$dom = new DomDocument("1.0");
 				$dom->formatOutput = true;
-				foreach($iterator as $name => $item)
+				foreach($files as $name => $item)
 				{  
-					if ((strcmp($item->getFilename(), ".") !== 0) && (strcmp($item->getFilename(), "..") !== 0))
+					if ((strcmp($item->getFilename(), ".") !== 0) && (strcmp($item->getFilename(), "..") !== 0) && (pathinfo($item->getFilename(), PATHINFO_EXTENSION) == "jpg"))
 					{
 				    	$img = $dom->createElement('img');
 

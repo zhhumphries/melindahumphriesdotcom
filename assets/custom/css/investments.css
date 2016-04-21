@@ -70,12 +70,6 @@
 	background-color: rgba(238,238,238,0.85);
 }
 
-.contact_title {
-	font-style: italic;
-	text-transform: lowercase;
-	color: #797374;
-}
-
 .contact_text {
 	color: #797374;
 }
@@ -99,4 +93,31 @@
 .contact_button:active {
 	background-color: #5F5135 !important;
 	outline:none !important;
+}
+
+.close_button {
+	background-image: url('../../fancybox/source/fancybox_sprite.png');
+	opacity: 1.0 !important;
+	position: absolute;
+	top: -7px;
+	right: -9px;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	z-index: 8040;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	   only screen and (min--moz-device-pixel-ratio: 1.5),
+	   only screen and (min-device-pixel-ratio: 1.5){
+	.close_button {
+		background-image: url('../../fancybox/source/fancybox_sprite@2x.png');
+		background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
+	}
+}
+
+.contact_input:focus { 
+    outline: none;
+    border-color: #917e59;
+    box-shadow: 0 0 10px #917e59;
 }

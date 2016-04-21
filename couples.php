@@ -40,12 +40,17 @@
 		$dir = "images/couples/";
 		$iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir));
 
+		$files = iterator_to_array($iterator);
+
+		// sort them by name
+		uasort($files, create_function('$a,$b', 'return strnatcasecmp($a->getFilename(), $b->getFilename());'));
+
 		$dom = new DomDocument("1.0");
 		$dom->formatOutput = true;
 		$row_div = $dom->createElement('div');
 		$row_div = $dom->appendChild($row_div);
 		$row_count = 0;
-		foreach($iterator as $name => $item)
+		foreach($files as $name => $item)
 		{  
 			if ((strcmp($item->getFilename(), ".") !== 0) && (strcmp($item->getFilename(), "..") !== 0))
 			{

@@ -1,0 +1,80 @@
+#about-me-image-p {
+	display:inline-block;
+	max-width: 55%;
+	min-width:330px;
+	width: auto;
+	height: auto;
+	border-style: solid;
+  	border-color: #e5e5e5;
+  	margin: 0 3% 3% 0;
+}
+
+#about-me-image {
+	width:100%;
+  	padding: 3%;
+}
+
+#about-me-quote {
+	padding: 0 3% 0 3%;
+	color: #CAA363;
+	font-family: 'La Belle Aurore', cursive;
+	text-transform: lowercase;
+	text-align: left; 
+    -moz-text-align-last: left; /* Code for Firefox */
+    text-align-last: left;
+}
+
+#about-me-title {
+	padding: 0 3% 0 3%;
+	color: #CAA363;
+	text-align: left; 
+    -moz-text-align-last: left; /* Code for Firefox */
+    text-align-last: left;
+}
+
+.about-me-p {
+	margin: 0 3% 0 3%;
+	font-size: 18px;
+	text-align: justify;
+}
+
+@media (min-width: 768px) {
+	#about-me-title .about-me-p #about-me-quote {
+	    position: relative;
+	  	top: -15px;
+	}
+}
+
+#contactable-inner {
+	background-image:url(../../../images/contact.png) !important;
+}
+#contactable-contactForm {
+	background-color:#FFFFFF !important; /*333333*/
+  	box-shadow: 0 0 15px #6a6a6a !important;
+  	color: #333333 !important;
+}
+#contactable-callback {
+	color: #333333 !important;
+	font-size: 20px;
+	font-style: bold;
+}
+.contactable-submit {
+	background-color:#917e59 !important;
+	outline: none !important;
+	border:1px solid #756d5f !important
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff !important;
+	font-size:17px;
+	text-decoration:italic;
+	text-shadow:0px 1px 0px #332a1b !important;
+}
+.contactable-submit:hover {
+	background-color:#7a6847 !important;
+	outline: none !important;
+	border:1px solid #756d5f !important;
+}
+.contactable-submit:active {
+	background-color: #5F5135 !important;
+	outline:none !important;
+}

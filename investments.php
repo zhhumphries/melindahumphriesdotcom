@@ -12,6 +12,8 @@
 <link rel="stylesheet" type="text/css" href="assets/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen"/>
 
 <script type="text/javascript" src="assets/custom/js/investments.js"></script>
+<script type="text/javascript" src="assets/custom/js/contact.js"></script>
+
 
 <link rel="stylesheet" type="text/css" href="assets/custom/css/investments.css" media="screen"/>
 
@@ -27,8 +29,8 @@
 
     <div class="jumbotron">
       <div class="container">
-        <h2 class="contact_title">Hello, Gorgeous!</h2>
-        <h4 class="contact_text">For a detailed price quote please contact me at <a href="mailto:melindahumphries82@gmail.com">melindahumphries82@gmail.com</a> or click on the button bellow to fill out the contact form. I can't wait to hear from you!</h4>
+        <h2 class="contact_title">Hello, gorgeous!</h2>
+        <h4 class="contact_text">For a detailed price quote please contact me at <a href="mailto:melindahumphries82@gmail.com">melindahumphries82@gmail.com</a> or click on the button below to fill out the contact form. I can't wait to hear from you!</h4>
         <p><a class="btn btn-primary btn-lg contact_button" href="#myModal" data-toggle="modal" role="button">Contact Me &raquo;</a></p>
       </div>
     </div>
@@ -38,25 +40,29 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h3 id="myModalLabel">Let's chat!</h3>
+            <!--<a title="Close" class="close fancybox-item fancybox-close" href="javascript:;" data-dismiss="modal" aria-hidden="true"></a>-->
+            <button type="button" class="close close_button" title="Close" data-dismiss="modal">
+                <span aria-hidden="true"><a title="Close" class="close close_button" href="javascript:;"></a></span>
+                <span class="hide">Close</span>
+            </button>
+            <h2 id="myModalLabel">Let's chat!</h2>
           </div>
           <div class="modal-body">
 
             <form class="form-horizontal col-sm-12" id="contactForm">
                 <div class="form-group">
-                    <label for="contact-name">Your Name: <span style="color: #917e59">*</span></label>
-                    <input type="text" class="form-control" id="contact-name" name="name" placeholder="Your Name" type="text" onblur='validateName()'>
+                    <label for="contact-name">Your Name: <span style="color: #CAA363">*</span></label>
+                    <input type="text" class="form-control contact_input" id="contact-name" name="name" placeholder="Your Name" type="text" onblur='validateName()'>
                     <span class='error-message' id='name-error'></span>
                 </div>
                 <div class="form-group">
                     <label for="contact-phone">Your Phone Number:</label>
-                    <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="123-456-7890" type="text" onblur='validatePhone()'>
+                    <input type="tel" class="form-control contact_input" id="contact-phone" name="phone" placeholder="(123) 456-7890" type="text" onblur='validatePhone()'>
                     <span class='error-message' id='phone-error'></span>
                 </div>
                 <div class="form-group">
-                    <label for="contact-email">Your Email address: <span style="color: #917e59">*</span></label>
-                    <input type="email" class="form-control" id="contact-email" name="email" placeholder="you@mail.com" type="text" onblur='validateEmail()'>
+                    <label for="contact-email">Your Email address: <span style="color: #CAA363">*</span></label>
+                    <input type="email" class="form-control contact_input" id="contact-email" name="email" placeholder="you@mail.com" type="text" onblur='validateEmail()'>
                     <span class='error-message' id='email-error'></span>
                 </div>
                 <div class="form-group">
@@ -64,7 +70,7 @@
                         <label>Reason for Inquiry:</label>
                     </div>
                     <div>
-                        <input id="contact-category" class="form-control" type="text" name="category" list="categoryList" placeholder="Wedding">
+                        <input id="contact-category" class="form-control contact_input" type="text" name="category" list="categoryList" placeholder="Wedding">
                         <datalist id="categoryList">
                             <option value="Wedding">
                             <option value="Engagement">
@@ -82,11 +88,11 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for='contactMessage'>Your Message: <span style="color: #917e59">*</span></label>
-                    <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="What's on your mind??" type="text" onblur='validateMessage()'></textarea>
+                    <label for='contactMessage'>Your Message: <span style="color: #CAA363">*</span></label>
+                    <textarea class="form-control contact_input" rows="5" id='contact-message'  name='message' style="resize: none;" placeholder="What's on your mind??" type="text" onblur='validateMessage()'></textarea>
                     <span class='error-message' id='message-error'></span>
                 </div>
-                <button onclick='return validateForm()' class="btn btn-default pull-right contact_button">Submit</button>
+                <button onclick='return validateForm()' id="submit-button" class="btn btn-default pull-right contact_button">Send</button>
                 <button onclick="clearContactForm()" class="btn pull-right" data-dismiss="modal" aria-hidden="true">Cancel</button>
                 <span class='error-message pull-left' id='submit-error'></span>
             </form>
@@ -99,7 +105,7 @@
 
     <hr>
 
-    <h3 style="text-align: center;"><em>KIND WORDS</em></h3>
+    <h2 style="text-align: center;">Kind Words</h2>
     <div class="testimonial-div">
         <p><a class="fancybox testimonial-image pull-right" rel="gallery" href="images/investments/tori_adam_testimonial.jpg"><img src="images/investments/tori_adam_testimonial_small.png" align="right"></a>
         <p class="testimonial-text">&#8220;You put a lot of faith and trust into your photographer to capture this once in a lifetime day. You depend on them to capture your memories so you can revisit them throughout your life. Melinda photographed every little detail and every special moment, our final wedding is a complete and beautifully documented story of the day from start to finish. My husband and I are beyond grateful to her for being a part of our wedding day. We cannot sing her praises or recommended her enough!&#8221;</p></p>

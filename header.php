@@ -27,6 +27,7 @@
     <link href="assets/custom/css/footer.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
 
     <link rel='stylesheet' id='genericons-css'  href='assets/genericons/genericons.css?ver=3.3' type='text/css' media='all' />
