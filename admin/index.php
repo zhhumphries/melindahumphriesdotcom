@@ -9,7 +9,7 @@
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<meta name="description" content="">
 		<meta name="author" content="Melinda Humphries Photography">
-		
+
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<script type="text/javascript" src="assets/js/bootstrap-filestyle.min.js"> </script>
@@ -31,6 +31,7 @@
 				<h1>Rearange images here</h1>
 				<ul class="list" id="sortable">
 					<?php
+						clearstatcache();
 						$dir = "../images/home/";
 						$iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir));
 						$files = iterator_to_array($iterator);

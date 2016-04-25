@@ -18,40 +18,47 @@
 	$fileids = explode(",", $neworder);
 	$numoffiles = count($fileids);
 
+	clearstatcache();
 	// first lets rename all files to temporary names
 	for ($index = 0; $index < $numoffiles; $index++)
 	{
-		if (rename($directory.$fileids[$index].".jpg", $directory . "temp".$index) == TRUE)
+		if (copy($directory.$fileids[$index].".jpg", $directory . "temp".$index) == TRUE)
 		{
 			echo "<p>Renamed " . $fileids[$index].".jpg to " . "temp".$index . " successfully</p><br />";
+			unlink($directory.$fileids[$index].".jpg");
 		} else {
 			echo "<p>Failed to rename "  . $fileids[$index].".jpg</p><br />";
 		}
 		if ($_GET['origin'] != 'home') {
-			if (rename($directory.$fileids[$index]."_s.jpg", $directory . "temp".$index."_s") == TRUE)
+			if (copy($directory.$fileids[$index]."_s.jpg", $directory . "temp".$index."_s") == TRUE)
 			{
 				echo "<p>Renamed " . $fileids[$index]."_s.jpg to " . "temp".$index . "_s successfully</p><br />";
+				unlink($directory.$fileids[$index]."_s.jpg");
 			} else {
 				echo "<p>Failed to rename "  . $fileids[$index]."_s.jpg</p><br />";
 			}
 		}
-	}
+	} 
+
+	clearstatcache();
 	// rename to new naming convention
 	for ($index = 0; $index < $numoffiles; $index++)
 	{
 		if (($index+1) < 10)
 		{
-			if (rename($directory . "temp".$index, $directory . "image-00".($index+1).".jpg") == TRUE)
+			if (copy($directory . "temp".$index, $directory . "image-00".($index+1).".jpg") == TRUE)
 			{
 				echo "<p>Renamed temp".$index." to " . "image-00".($index+1).".jpg successfully</p><br />";
+				unlink($directory . "temp".$index);
 			} else
 			{
 				echo "<p>Failed to rename temp".$index."</p><br />";
 			}
 			if ($_GET['origin'] != 'home') {
-				if (rename($directory . "temp".$index."_s", $directory . "image-00".($index+1)."_s.jpg") == TRUE)
+				if (copy($directory . "temp".$index."_s", $directory . "image-00".($index+1)."_s.jpg") == TRUE)
 				{
 					echo "<p>Renamed temp".$index."_s to " . "image-00".($index+1)."_s.jpg successfully</p><br />";
+					unlink($directory . "temp".$index."_s");
 				} else
 				{
 					echo "<p>Failed to rename temp".$index."_s</p><br />";
@@ -59,9 +66,10 @@
 			}
 		} else if (($index+1) >= 10 && ($index+1) < 100)
 		{
-			if (rename($directory . "temp".$index, $directory . "image-0".($index+1).".jpg") == TRUE)
+			if (copy($directory . "temp".$index, $directory . "image-0".($index+1).".jpg") == TRUE)
 			{
 				echo "<p>Renamed temp".$index." to " . "image-0".($index+1).".jpg successfully</p><br />";
+				unlink($directory . "temp".$index);
 			} else {
 				echo "<p>Failed to rename temp".$index."</p><br />";
 			}
@@ -69,6 +77,7 @@
 				if (rename($directory . "temp".$index."_s", $directory . "image-0".($index+1)."_s.jpg") == TRUE)
 				{
 					echo "<p>Renamed temp".$index."_s to " . "image-0".($index+1)."_s.jpg successfully</p><br />";
+					unlink($directory . "temp".$index."_s");
 				} else {
 					echo "<p>Failed to rename temp".$index."_s</p><br />";
 				}
@@ -78,6 +87,7 @@
 			if (rename($directory . "temp".$index, $directory . "image-".($index+1).".jpg") == TRUE)
 			{
 				echo "<p>Renamed temp".$index." to " . "image-".($index+1).".jpg successfully</p><br />";
+				unlink($directory . "temp".$index);
 			} else {
 				echo "<p>Failed to rename temp".$index."</p><br />";
 			}
@@ -85,10 +95,12 @@
 				if (rename($directory . "temp".$index."_s", $directory . "image-".($index+1)."_s.jpg") == TRUE)
 				{
 					echo "<p>Renamed temp".$index."_s to " . "image-".($index+1)."_s.jpg successfully</p><br />";
+					unlink($directory . "temp".$index."_s");
 				} else {
 					echo "<p>Failed to rename temp".$index."_s</p><br />";
 				}
 			}
 		}
 	}
+	clearstatcache();
 ?>
