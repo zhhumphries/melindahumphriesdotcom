@@ -1,0 +1,87 @@
+.site-wrapper {
+	margin: 60px 20px 100px 20px;
+	min-width: 2200;
+	max-width: 2200px;
+	min-height: 1000px;
+	overflow: hidden;
+}
+h1 {
+	margin-left: 20px;
+}
+.rearangediv {
+	border-style: solid;
+	border-color: green;
+	overflow: hidden;
+	float: left;
+	min-height: 100%;
+}
+.deletediv {
+	border-style: solid;
+	border-color: red;
+	overflow: hidden;
+	float: right;
+	min-height: 100%
+}
+.fbox {
+	margin: 0;
+	padding: 0;
+	width: 49%;
+	min-height: 95%;
+	overflow: hidden;
+}
+#sortable {
+	min-width: 100%;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+#sortable2 {
+	min-width: 100%;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+#sortable li {
+	list-style-type: none;
+	margin: 10px;
+	padding: 0;
+	float: left;
+	width: 300px;
+	height: 300px;
+	font-size: 4em;
+	text-align: center;
+}
+#sortable2 li {
+	list-style-type: none;
+	margin: 10px;
+	padding: 0;
+	float: left;
+	width: 300px;
+	height: 300px;
+	font-size: 4em;
+	text-align: center;
+}
+#sortable img {
+	max-height: 100%;
+	max-width: 100%;
+}
+#sortable2 img {
+	max-height: 100%;
+	max-width: 100%;
+}
+#scrolling-div {
+	clear: both;
+	position: fixed;
+	top: 5px;
+	right: 0;
+	width: 300px;
+}
+.stButton {
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.active {
+	background-color: #ff9900 !important;
+	font-style: bold !important;
+}

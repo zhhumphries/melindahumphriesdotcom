@@ -49,15 +49,12 @@
 
 <div class="container">
 	<p id="about-me-image-p" class="pull-left"><img id="about-me-image"src="images/melinda.jpg"></p>
-	<h3 id="about-me-title"><strong><em>Classy + Fun</em></strong></h3>
-	<p class="about-me-p">If we haven't met already, hello! I'm Melinda.</p>
-	<p class="about-me-p">I'm a lifestyle and wedding photographer in the beautiful and sunny San Diego area. If you can't tell already, i'm sort of in love with all things blush pink and gold. If you are to, well... let's be best friends. If I could, I would probably go out buy a closet filled with only blush clothes. I know, unrealistic. But I can dream, right?</p>
-	<p class="about-me-p">I'm a wifey of one amazing husband who believes and dreams with me. He's the ranch to my celery or the celery to my ranch...which ever sounds better. But really. He's my love story that came true. Married now for three years and couldn't be happier.</p>
-	<h1 id="about-me-quote">&#8220;she believed she could, so she did&#8221;</h1>
-	<p class="about-me-p">I'm a mommy of two baby boys who are only 16 months apart. If you were wondering... It wasn't planned that way. AND I was seriously nervous with my second that I wouldn't be able to handle taking care of a 18 month old and a newborn. BUT I'm doing it and I love it. Yay. Go me!</p>
-	<p class="about-me-p">I'm a daughter of our loving God. I am accepted and loved no matter what. Which has given me a peace and joy that is so freeing. Because He loved me first, now I can love others the way He intended me to.</p>
-	<p class="about-me-p">I'm a friend. So let's go get some coffee at a cute coffee shop and talk ALL about your photoshoot or wedding day!</p><br>
-	<p class="about-me-p">I can't wait to meet you, gorgeous!</p>
+	<h3 id="about-me-title"><strong><em>I believe...</em></strong></h3>
+	<p class="about-me-p">Love exists all around us in many different forms. Love is the passion you have for the world around you, the service you provide for those in need, and why you do the things that truly matter. I have a passion to understand love, completely. Love can make you laugh uncontrollably, or it can cause tears to trickle swiftly down your cheeks. Love makes us human.</p>
+	<p class="about-me-p">Since I was young, I have always been fascinated by people and their stories, the pure joy of new life, or the heartbreak of a loved one lost. The rawness of human emotion inspires me to document this four letter word that can change our world in every way. Whether it be the love that two people share, or the love that a parent has for their child, it is my passion to record memories. These moments we have together can be long, but they also may be short. Love, documented and held onto, can be used to teach and inspire future generations.</p>
+	<h1 id="about-me-quote">&#8220;My mission is to connect generations together through my photography.&#8221;</h1>
+	<p class="about-me-p">Now imagine the future, as you look over at your grandchildren sitting on the floor. They flip through the crisp pages of your photographs, placing themselves in your younger years. They see memories of the past, a time they never knew. Through these images, they see your memories, your personality, and your passions. They see what life looked like for you, and in that moment they are instantly connected with you.</p>
+    <p class="about-me-p">I believe there is a need for raw, high-quality, beautiful photographs of important, treasured moments in your life. This is a belief that I apply to my own life, as every day, I see my two baby boys growing and changing. I want to remember these times when they are young. I want to hold onto the feeling I have for them at this moment. I want to look back at the times my husband and I were young newlyweds and tell the next generations about how we have been in love the entire time. I truly believe in this idea. I believe in lasting impressions. I believe that the relationships you have now will affect the future to come. I have a passion to story tell. My mission is to connect generations together through my photography.</p>
 </div>
 
 
